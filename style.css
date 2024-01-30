@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/starting-career-concept-illustration_114360-16994.jpg?w=996&t=st=1706609850~exp=1706610450~hmac=bc84f4662e8902e4a1830e54b206da49f26796b7e89d2aa1c42cdef4556785c5');
+    background-size: cover; /* Adjusted to 'cover' to cover the entire body */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center; /* Centers the background image */
+    color: #ec0000;
+    min-height: 100vh; /* Ensures that the body takes at least the height of the viewport */
+    position: relative; /* Makes body relative for absolute positioning */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Makes container relative for absolute positioning */
+    z-index: 1; /* Ensures the container appears above the background image */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d42828;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1731c5;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    position: fixed; /* Fixes the footer to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+    padding: 20px 0;
+    z-index: 2; /* Ensures the footer appears above the background image */
+}
