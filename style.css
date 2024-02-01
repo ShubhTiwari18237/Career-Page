@@ -3,20 +3,21 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-image: url('https://img.freepik.com/free-vector/starting-career-concept-illustration_114360-16994.jpg?w=996&t=st=1706609850~exp=1706610450~hmac=bc84f4662e8902e4a1830e54b206da49f26796b7e89d2aa1c42cdef4556785c5');
-    background-size: cover; /* Adjusted to 'cover' to cover the entire body */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: center; /* Centers the background image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     color: #ec0000;
-    min-height: 100vh; /* Ensures that the body takes at least the height of the viewport */
-    position: relative; /* Makes body relative for absolute positioning */
+    min-height: 100vh;
+    position: relative; 
 }
 
 .container {
+    width: 90%; /* Adjusted to percentage for responsiveness */
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    position: relative; /* Makes container relative for absolute positioning */
-    z-index: 1; /* Ensures the container appears above the background image */
+    position: relative; 
+    z-index: 1; 
 }
 
 nav ul {
@@ -57,11 +58,25 @@ main {
 
 footer {
     text-align: center;
-    position: fixed; /* Fixes the footer to the bottom */
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px 0;
-    z-index: 2; /* Ensures the footer appears above the background image */
+    z-index: 2; 
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
